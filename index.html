@@ -9,29 +9,23 @@
 </head>
 
 <body>
-  <!-- 顶部版权信息 -->
-  <div class="copyright">
-    请勿用于商业用途。所有资源版权均归原作者所有，版权争议与我无关<br>
-    如有侵权请联系我们删除。
-  </div>
-
   <div class="container">
     <!-- 左侧目录 -->
     <aside class="sidebar">
       <h3>目录</h3>
       <ul class="menu">
         <li class="menu-item">
-          <a href="#" class="menu-link">热门短剧</a>
+          <a href="#hot-short-drama" class="menu-link">热门短剧</a>
         </li>
         <li class="menu-item">
-          <a href="#" class="menu-link">电影合集</a>
+          <a href="#movie-collection" class="menu-link">电影合集</a>
         </li>
         <li class="menu-item has-submenu">
-          <a href="#" class="menu-link"><span class="arrow"></span>电视剧集</a>
+          <a href="#tv-collection" class="menu-link"><span class="arrow"></span>电视剧集</a>
           <ul class="submenu">
-            <li class="submenu-item"><a href="#" class="submenu-link">正在热播</a></li>
-            <li class="submenu-item"><a href="#" class="submenu-link">国产剧集</a></li>
-            <li class="submenu-item"><a href="#" class="submenu-link">欧美剧集</a></li>
+            <li class="submenu-item"><a href="#hot-tv-collection" class="submenu-link">正在热播</a></li>
+            <li class="submenu-item"><a href="#chn-tv-collection" class="submenu-link">国产剧集</a></li>
+            <li class="submenu-item"><a href="#us-tv-collection" class="submenu-link">欧美剧集</a></li>
           </ul>
         </li>
         <li class="menu-item has-submenu">
@@ -47,40 +41,46 @@
 
     <!-- 右侧内容区 -->
     <main class="content">
+      <!-- 版权信息 -->
+      <div class="copyright">
+        请勿用于商业用途。所有资源版权均归原作者所有，版权争议与我无关<br>
+        如有侵权请联系我们删除。
+      </div>
       <section id="hot-short-drama" class="content-section">
         <h2>📺 热门短剧</h2>
-        <div class="update-time">最后更新 2025-10-24</div>
+        <div class="update-time">🗓 最后更新 2025-10-24</div>
         <div class="resource-list">
           <div class="resource-item">
-            <h3>10月24日精选短剧推荐（50部）</h3>
-            <a href="https://pan.quark.cn/s/a105b6750e07" target="_blank"
-              class="pan-link">https://pan.quark.cn/s/a105b6750e07</a>
+            <b>10月24日精选短剧推荐（50部）</b>
+            <a href="https://pan.quark.cn/s/a105b6750e07" class="pan-link">https://pan.quark.cn/s/a105b6750e07</a>
           </div>
-          <div class="resource-item">
-            <h3>10月23日精选短剧推荐（97部）</h3>
-            <a href="https://pan.quark.cn/s/9af8b6000146" target="_blank"
-              class="pan-link">https://pan.quark.cn/s/9af8b6000146</a>
-          </div>
-          <div class="resource-item">
-            <h3>🔥 韩国热门短剧大合集·韩语中字（264GB）</h3>
-            <a href="https://pan.quark.cn/s/0ab12faa836f" target="_blank"
-              class="pan-link">https://pan.quark.cn/s/0ab12faa836f</a>
-          </div>
-          <div class="resource-item">
-            <h3>🔥 10月20日精选付费短剧推荐（71部）</h3>
-            <a href="https://pan.quark.cn/s/08f449e3a779" target="_blank"
-              class="pan-link">https://pan.quark.cn/s/08f449e3a779</a>
-          </div>
-          <div class="resource-item">
-            <h3>🔥 10月19日精选付费短剧推荐（61部）</h3>
-            <a href="https://pan.quark.cn/s/294c030c06b0" target="_blank"
-              class="pan-link">https://pan.quark.cn/s/294c030c06b0</a>
-          </div>
+        </div>
+      </section>
+      <section id="movie-collection" class="content-section">
+        <h2>🎬 电影合集</h2>
+        <div class="update-time">最后更新 2025-10-24</div>
+      </section>
+      <section class="content-section">
+        <h2 id="tv-collection">📺 电视剧集</h2>
+        <h3 id="hot-tv-collection">→ 正在热播</h3>
+        <div class="update-time">🗓 最后更新 2025-10-24</div>
+        <div id="hot-tv" class="resource-list hotbg">
+          <!-- 这里将通过JavaScript动态填充正在热播的电视剧资源 -->
+        </div>
+        <h3 id="chn-tv-collection">→ 国产剧集</h3>
+        <div class="update-time">🗓 最后更新 2025-10-24</div>
+        <div id="chn-tv" class="resource-list">
+          <!-- 这里将通过JavaScript动态填充国产剧集的电视剧资源 -->
+        </div>
+        <h3 id="us-tv-collection">→ 欧美剧集</h3>
+        <div class="update-time">🗓 最后更新 2025-10-24</div>
+        <div id="us-tv" class="resource-list">
+          <!-- 这里将通过JavaScript动态填充欧美剧集的电视剧资源 -->
         </div>
       </section>
     </main>
   </div>
-
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
